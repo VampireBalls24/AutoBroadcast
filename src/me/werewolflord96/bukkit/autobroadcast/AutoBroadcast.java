@@ -15,16 +15,15 @@ public class AutoBroadcast extends JavaPlugin {
 	public static File pluginFolder = new File("plugins/AutoBroadcast/");
 	public static int TID = 0;
 	public static long messageInterval = 60;
-	public static String pluginPrefix = "[AutoBroadcast] ";
 	
 	@Override
 	public void onDisable() {
-		this.getLogger().info(pluginPrefix + "Disabled.");
+		this.getLogger().info("Disabled.");
 	}
 	
 	@Override
 	public void onEnable() {
-		this.getLogger().info(pluginPrefix + "Enabled.");
+		this.getLogger().info("Enabled.");
 		
 		// Generates Folder
 		if (!pluginFolder.exists()) {
