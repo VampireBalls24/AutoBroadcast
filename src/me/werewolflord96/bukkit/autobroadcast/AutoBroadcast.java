@@ -14,7 +14,7 @@ public class AutoBroadcast extends JavaPlugin {
 	public static File messagesFile = new File("plugins/AutoBroadcast/messages.txt");
 	public static File pluginFolder = new File("plugins/AutoBroadcast/");
 	public static int TID = 0;
-	public static long messageInterval = 60;
+	public static long messageInterval = 120;
 	
 	@Override
 	public void onDisable() {
