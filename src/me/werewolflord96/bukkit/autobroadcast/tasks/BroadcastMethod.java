@@ -24,6 +24,8 @@ public class BroadcastMethod {
 		
 		String messageLine = bufferedReader.readLine();
 		
+		messageLine = messageLine.replaceAll("&", "§");
+		
 		Bukkit.getServer().broadcastMessage(ChatColor.GOLD + "[" + ChatColor.YELLOW + "AutoBroadcast" + ChatColor.GOLD + "] " + ChatColor.YELLOW + messageLine);
 		
 		LineNumberReader lineNumberReader = new LineNumberReader(new FileReader(new File(fileName)));
